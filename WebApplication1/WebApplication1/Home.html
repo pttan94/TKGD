@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DoCu.vn</title>
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <header style="background:#f4f4f4;">
+        <div class="container">
+            <div class="top">
+                <a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập / Đăng ký</a>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="header clearfix">
+                <div class="top-left">
+                    <div class="logo">
+                        <a href="./Home.html"><img src="./images/logo.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="top-right clearfix">
+                    <div class="search">
+                        <div class="search-input">
+                            <input type="text" size="35" placeholder="Nhập từ khóa cần tìm..." />
+                            <button type="submit"><img src="images/search.png" width="20" /></button>
+                        </div>
+                        <div class="advan-search">
+                            <a id="advan-search">Tìm kiếm nâng cao</a>
+                        </div>
+                        <div class="advan-search-div advan-mobile hidden-lg hidden-md">
+                            <div style="position:relative">
+                                <div class="clearfix">
+                                    <div class="advan advan-1">
+                                        <h4>Danh mục</h4>
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>Xe</option>
+                                            <option>Đồ điện tử</option>
+                                            <option>Nội thất</option>
+                                            <option>Giải trí</option>
+                                            <option>Sách</option>
+                                        </select>
+
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>Truyện tranh</option>
+                                            <option>Truyện trinh thám</option>
+                                            <option>Sách thiếu nhi</option>
+                                            <option>Khoa học viễn tưởng</option>
+                                            <option>Sách giáo khoa</option>
+                                        </select>
+                                    </div>
+                                    <div class="advan advan-2">
+                                        <h4>Khu vực</h4>
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>TPHCM</option>
+                                            <option>Hà Nội</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Cần Thơ</option>
+                                        </select>
+
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>Quận 1</option>
+                                            <option>Quận 2</option>
+                                            <option>Quận 3</option>
+                                            <option>Quận 4</option>
+                                            <option>Quận 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="advan advan-3">
+                                        <h4>Giá</h4>
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>0 - 100.000 VNĐ</option>
+                                            <option>100.000 - 200.000 VNĐ</option>
+                                            <option>200.000 - 500.000 VNĐ</option>
+                                            <option>500.000 - 1.000.000 VNĐ</option>
+                                            <option>1.000.000 - 5.000.000 VNĐ</option>
+                                            <option>> 5.000.000 VNĐ</option>
+                                        </select>
+                                    </div>
+                                    <div class="advan advan-4">
+                                        <h4>Mức độ sử dụng</h4>
+                                        <select>
+                                            <option selected value="all">Tất cả</option>
+                                            <option>Rất cũ</option>
+                                            <option>Tương đối cũ</option>
+                                            <option>Mới qua sử dụng</option>
+                                            <option>Mới hoàn toàn</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="close-advan">
+                                    <a class="close-advan-btn" title="close">X</a>
+                                </div>
+
+                                <div class="search-btn">
+                                    <a>Tìm kiếm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="keysearch">
+                            <span>Tags:</span> Harry Potter, Exciter, Samsung Galaxy S6,...
+                        </div>
+                    </div>
+                    <div class="post">
+                            <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/post.png" alt="" /> Đăng tin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="primary clearfix">
+                <div class="pri-left">
+                    <div class="mod">
+                        <h3>Danh Mục</h3>
+                        <ul class="menu">
+                            <li class="menu-1 parent">
+                                <a href="#">Xe cộ</a>
+                                <ul class="menu-child">
+                                    <li><a href="#">Xe máy</a></li>
+                                    <li><a href="#">Xe đạp</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-2">
+                                <a href="#">Đồ điện tử</a>
+                            </li>
+                            <li class="menu-1 parent">
+                                <a href="#">Xe cộ</a>
+                                <ul class="menu-child">
+                                    <li><a href="#">Xe máy</a></li>
+                                    <li><a href="#">Xe đạp</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-2">
+                                <a href="#">Đồ điện tử</a>
+                            </li>
+                            <li class="menu-1 parent">
+                                <a href="#">Xe cộ</a>
+                                <ul class="menu-child">
+                                    <li><a href="#">Xe máy</a></li>
+                                    <li><a href="#">Xe đạp</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-2">
+                                <a href="#">Đồ điện tử</a>
+                            </li>
+                            <li class="menu-1 parent">
+                                <a href="#">Xe cộ</a>
+                                <ul class="menu-child">
+                                    <li><a href="#">Xe máy</a></li>
+                                    <li><a href="#">Xe đạp</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-2">
+                                <a href="#">Đồ điện tử</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mod filter">
+                        <h4>Giá bán</h4>
+                        <div class="filter-price">
+                            <input type="checkbox" value="100000" /> 0 - 100.000 VNĐ <br />
+                            <input type="checkbox" value="200000" /> 100.000 - 200.000 VNĐ <br />
+                            <input type="checkbox" value="500000" /> 200.000 - 500.000 VNĐ <br />
+                            <input type="checkbox" value="1000000" /> 500.000 - 1.000.000 VNĐ <br />
+                            <input type="checkbox" value="5000000" /> 1.000.000 - 5.000.000 VNĐ <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="pri-right">
+                    <div class="clearfix main-header">
+                        <div class="main-title">
+                            <h3>Rao vặt gần đây</h3>
+                        </div>
+                        <div class="main-sort">
+                            <span>Giá</span>
+                            <img id="price-filter" src="images/arrow-down.png" alt="" width="23" onclick="change_img()" />
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="group-title"><h4>Sách</h4></div>
+                        <div class="item-list">
+                            <div class="item clearfix">
+                                <div class="col-md-8 ">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="see-all">
+                            <a href="#">Xem tất cả >></a>
+                        </div>
+                    </div>
+                    <div class="group-item">
+                        <div class="group-title"><h4>Xe</h4></div>
+                        <div class="item-list">
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-md-8">
+                                    <div class="item-img">
+                                        <a><img src="../images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a>Hà Nội 36 phố phường</a></h4>
+                                        <p class="clock">1 tiếng trước</p>
+                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 item-price">
+                                    <span class="">150.000 VNĐ</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="see-all">
+                            <a href="#">Xem tất cả >></a>
+                        </div>
+                    </div>
+
+                    <div class="advan-search-div advan-desktop hidden-sm hidden-xs">
+                        <div style="position:relative">
+                            <div class="clearfix">
+                                <div class="advan advan-1">
+                                    <h4>Danh mục</h4>
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>Xe</option>
+                                        <option>Đồ điện tử</option>
+                                        <option>Nội thất</option>
+                                        <option>Giải trí</option>
+                                        <option>Sách</option>
+                                    </select>
+
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>Truyện tranh</option>
+                                        <option>Truyện trinh thám</option>
+                                        <option>Sách thiếu nhi</option>
+                                        <option>Khoa học viễn tưởng</option>
+                                        <option>Sách giáo khoa</option>
+                                    </select>
+                                </div>
+                                <div class="advan advan-2">
+                                    <h4>Khu vực</h4>
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>TPHCM</option>
+                                        <option>Hà Nội</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Cần Thơ</option>
+                                    </select>
+
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>Quận 1</option>
+                                        <option>Quận 2</option>
+                                        <option>Quận 3</option>
+                                        <option>Quận 4</option>
+                                        <option>Quận 5</option>
+                                    </select>
+                                </div>
+                                <div class="advan advan-3">
+                                    <h4>Giá</h4>
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>0 - 100.000 VNĐ</option>
+                                        <option>100.000 - 200.000 VNĐ</option>
+                                        <option>200.000 - 500.000 VNĐ</option>
+                                        <option>500.000 - 1.000.000 VNĐ</option>
+                                        <option>1.000.000 - 5.000.000 VNĐ</option>
+                                        <option>> 5.000.000 VNĐ</option>
+                                    </select>
+                                </div>
+                                <div class="advan advan-4">
+                                    <h4>Mức độ sử dụng</h4>
+                                    <select>
+                                        <option selected value="all">Tất cả</option>
+                                        <option>Rất cũ</option>
+                                        <option>Tương đối cũ</option>
+                                        <option>Mới qua sử dụng</option>
+                                        <option>Mới hoàn toàn</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="close-advan">
+                                <a class="close-advan-btn" title="close">X</a>
+                            </div>
+
+                            <div class="search-btn">
+                                <a>Tìm kiếm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container clearfix">
+            <div class="foot-mod foot-mod-1">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a><img src="./images/fb.png" alt=""/> Facebook</a></li>
+                    <li><a><img src="./images/gg.png" alt="" /> Google +</a></li>
+                    <li><a><img src="./images/tw.png" alt="" /> Twitter</a></li>
+                </ul>
+            </div>
+            <div class="foot-mod foot-mod-2">
+                <h4>Về chúng tôi</h4>
+                <ul>
+                    <li><a>Giới thiệu</a></li>
+                    <li><a>Quy định</a></li>
+                    <li><a>Báo lỗi</a></li>
+                </ul>
+            </div>
+            <div class="foot-mod foot-mod-3">
+                <h4>Được chứng nhận bởi</h4>
+                <img src="./images/cer.png" alt="" />
+            </div>
+            <div class="foot-mod foot-mod-4">
+                <h4>Phiên bản di động</h4>
+                <img src="./images/gg play.png" alt="" />
+                <img src="./images/app store.png" alt="" />
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright 2016
+    </footer>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Vui lòng đăng nhập để đăng tin</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <script type="text/javascript">
+   $(document).ready(function() {
+		$('#pwd').keydown(function(e) {
+           if ( event.which == 13 ) {
+				$('#btn-login').click();
+			}
+        });
+   });
+
+
+                    </script>
+                    <div class="checkbox">
+                        <label>Chưa có tài khoản? </label>
+                        <a href="#" style="color:red;font-style:italic">Đăng ký</a>
+
+
+                    </div>
+                    <div>  <label id="lbl_error" style="color:red;font-style:italic; display:none">Thông tin đăng nhập không đúng! </label> </div>
+                    <button id='btn-login' type="submit" onclick="ValidateForm();" class="btn btn-info">Đăng nhập</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+	 function ValidateForm(){
+     var username=$("#username").val();
+	 var pass=$("#pwd").val();
+
+	 if(username =="user123@gmail.com" && pass=="user123")
+	 {
+ 			//$("#lbl_error").hide();
+			alert("Đăng nhập thành công!");
+			//window.location = "/__ng_tin.html";
+	 }
+	 else {
+			$("#lbl_error").show();
+	 }
+
+	  return false;
+	 }
+
+
+    </script>
+
+    <script>
+
+        function change_img(type) {
+            if ($('#price-filter').attr('src') == 'images/arrow-up.png')
+                $('#price-filter').attr('src', 'images/arrow-down.png');
+            else $('#price-filter').attr('src', 'images/arrow-up.png');
+        }
+
+        $(document).ready(function () {
+            $('.menu li').click(function (e) {
+                if ($(this).hasClass('active'))
+                {
+                    $(this).removeClass('active');
+                }
+                else {
+                    $('.menu li').removeClass('active');
+                    $(this).addClass('active');
+                }
+                
+            });
+            if ($(window).width() < 991)
+                $('.menu li.parent').css('background-position-x', $(window).width() - 50 + 'px');
+
+            $('#advan-search').click(function () {
+                if ($('.advan-mobile').css('display') == 'none')
+                    $('.advan-mobile').show();
+                else $('.advan-mobile').hide();
+
+                if ($('.advan-desktop').css('display') == 'none')
+                    $('.advan-desktop').show();
+                else $('.advan-desktop').hide();
+            })
+            $('.close-advan-btn').click(function () {
+                $('.advan-search-div').hide();
+            });
+        })
+    </script>
+
+
+</body>
+</html>
