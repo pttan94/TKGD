@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="" />
     <meta content="telephone=no" name="format-detection" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,10 +17,10 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
-    <header style="background:#f4f4f4;">
+    <header>
         <div class="container">
             <div class="top">
-                <a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập / Đăng ký</a>
+                <a href="#" title="Đăng nhập / Đăng ký tài khoản" data-toggle="modal" data-target="#myModal">Đăng nhập / Đăng ký</a>
             </div>
         </div>
     </header>
@@ -28,99 +29,95 @@
             <div class="header clearfix">
                 <div class="top-left">
                     <div class="logo">
-                        <a href="./Home.html"><img src="./images/logo.jpg" alt="" /></a>
+                        <a href="./Home.html" title=""><img src="./images/logo.jpg" alt="" /></a>
                     </div>
                 </div>
                 <div class="top-right clearfix">
                     <div class="search">
-                        <div class="search-input">
+                        <div class="search-input clearfix">
                             <input type="text" size="35" placeholder="Nhập từ khóa cần tìm..." />
-                            <button type="submit"><img src="images/search.png" width="20" /></button>
+                            <!--<button type="submit"><img src="images/search.png" width="20" /></button>-->
                         </div>
-                        <div class="advan-search">
-                            <a id="advan-search">Tìm kiếm nâng cao</a>
-                        </div>
-                        <div class="advan-search-div advan-mobile hidden-lg hidden-md">
-                            <div style="position:relative">
-                                <div class="clearfix">
-                                    <div class="advan advan-1">
-                                        <h4>Danh mục</h4>
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>Xe</option>
-                                            <option>Đồ điện tử</option>
-                                            <option>Nội thất</option>
-                                            <option>Giải trí</option>
-                                            <option>Sách</option>
-                                        </select>
-
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>Truyện tranh</option>
-                                            <option>Truyện trinh thám</option>
-                                            <option>Sách thiếu nhi</option>
-                                            <option>Khoa học viễn tưởng</option>
-                                            <option>Sách giáo khoa</option>
-                                        </select>
-                                    </div>
-                                    <div class="advan advan-2">
-                                        <h4>Khu vực</h4>
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>TPHCM</option>
-                                            <option>Hà Nội</option>
-                                            <option>Đà Nẵng</option>
-                                            <option>Cần Thơ</option>
-                                        </select>
-
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>Quận 1</option>
-                                            <option>Quận 2</option>
-                                            <option>Quận 3</option>
-                                            <option>Quận 4</option>
-                                            <option>Quận 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="advan advan-3">
-                                        <h4>Giá</h4>
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>0 - 100.000 VNĐ</option>
-                                            <option>100.000 - 200.000 VNĐ</option>
-                                            <option>200.000 - 500.000 VNĐ</option>
-                                            <option>500.000 - 1.000.000 VNĐ</option>
-                                            <option>1.000.000 - 5.000.000 VNĐ</option>
-                                            <option>> 5.000.000 VNĐ</option>
-                                        </select>
-                                    </div>
-                                    <div class="advan advan-4">
-                                        <h4>Mức độ sử dụng</h4>
-                                        <select>
-                                            <option selected value="all">Tất cả</option>
-                                            <option>Rất cũ</option>
-                                            <option>Tương đối cũ</option>
-                                            <option>Mới qua sử dụng</option>
-                                            <option>Mới hoàn toàn</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="close-advan">
-                                    <a class="close-advan-btn" title="close">X</a>
-                                </div>
-
-                                <div class="search-btn">
-                                    <a>Tìm kiếm</a>
-                                </div>
-                            </div>
-                        </div>
+                  
                         <div class="keysearch">
-                            <span>Tags:</span> Harry Potter, Exciter, Samsung Galaxy S6,...
+                            <span>Từ khóa:</span> Harry Potter, Exciter, Samsung Galaxy S6, Sách giáo khoa cũ, Trang trí nội thất, ...
+                        </div>
+                        <div class="advan-search clearfix">
+                            <div class="advan">
+                                <!--<span>Danh mục</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả danh mục</option>
+                                    <option class="main-category">---Sách---</option>
+                                    <option>Truyện tranh</option>
+                                    <option>Truyện trinh thám</option>
+                                    <option>Sách thiếu nhi</option>
+                                    <option>Khoa học viễn tưởng</option>
+                                    <option>Sách giáo khoa</option>
+                                    <option class="main-category">---Xe---</option>
+                                    <option>Xe máy</option>
+                                    <option>Ô tô</option>
+                                    <option>Xe tải</option>
+                                    <option>Xe đạp</option>
+                                    <option>Phụ kiện xe</option>
+                                    <option class="main-category">---Đồ điện tử---</option>
+                                    <option>Tivi</option>
+                                    <option>Máy lạnh</option>
+                                    <option>Máy giặt</option>
+                                    <option>Loa</option>
+                                    <option class="main-category">---Nội thất---</option>
+                                    <option>Bàn ghế</option>
+                                    <option>Tủ</option>
+                                    <option>Trang trí</option>
+                                    <option class="main-category">---Giải trí---</option>
+                                    <option class="main-category">---Thời trang---</option>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                    <option>Phụ kiện</option>
+
+                                </select>
+
+                            </div>
+                            <div class="advan">
+                                <!--<span>Khu vực</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả khu vực</option>
+                                    <option class="main-category">---TPHCM---</option>
+                                    <option>Quận 1</option>
+                                    <option>Quận 2</option>
+                                    <option>Quận 3</option>
+                                    <option>Quận 4</option>
+                                    <option>Quận 5</option>
+                                    <option class="main-category">---Hà Nội---</option>
+                                    <option>Quận Cầu Giấy</option>
+                                    <option>Quận Hoàn Kiếm</option>
+                                    <option>Quận Đống Đa</option>
+                                    <option>Quận Hai Bà Trưng</option>
+                                    <option>Quận Thanh Xuân</option>
+                                    <option class="main-category">---Đà Nẵng---</option>
+                                    <option class="main-category">---Cần Thơ---</option>
+                                </select>
+
+                            </div>
+                            <div class="advan">
+                                <!--<span>Giá</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả giá</option>
+                                    <option>0 - 100.000 VNĐ</option>
+                                    <option>100.000 - 200.000 VNĐ</option>
+                                    <option>200.000 - 500.000 VNĐ</option>
+                                    <option>500.000 - 1.000.000 VNĐ</option>
+                                    <option>1.000.000 - 5.000.000 VNĐ</option>
+                                    <option>> 5.000.000 VNĐ</option>
+                                </select>
+
+                            </div>
+                            <div class="search-btn">
+                            <a class="" href="#" title="Tìm kiếm sản phẩm">Tìm kiếm</a>
+                        </div>
                         </div>
                     </div>
                     <div class="post">
-                            <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/post.png" alt="" /> Đăng tin</a>
+                        <a href="#" title="Đăng tin bán sản phẩm" data-toggle="modal" data-target="#myModal"><img src="images/post.png" alt="" /> Đăng tin</a>
                     </div>
                 </div>
             </div>
@@ -130,56 +127,71 @@
                         <h3>Danh Mục</h3>
                         <ul class="menu">
                             <li class="menu-1 parent">
-                                <a href="#">Xe cộ</a>
+                                <a href="#">Xe</a>
                                 <ul class="menu-child">
                                     <li><a href="#">Xe máy</a></li>
                                     <li><a href="#">Xe đạp</a></li>
+                                    <li><a href="#">Xe tải</a></li>
+                                    <li><a href="#">Xe Ô tô</a></li>
+                                    <li><a href="#">Phụ kiện xe</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-2">
+                            <li class="menu-2 parent">
                                 <a href="#">Đồ điện tử</a>
-                            </li>
-                            <li class="menu-1 parent">
-                                <a href="#">Xe cộ</a>
                                 <ul class="menu-child">
-                                    <li><a href="#">Xe máy</a></li>
-                                    <li><a href="#">Xe đạp</a></li>
+                                    <li><a href="#">Ti vi</a></li>
+                                    <li><a href="#">Máy lạnh</a></li>
+                                    <li><a href="#">Máy giặt</a></li>
+                                    <li><a href="#">Loa</a></li>
+                                    <li><a href="#">Camera</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-2">
-                                <a href="#">Đồ điện tử</a>
-                            </li>
-                            <li class="menu-1 parent">
-                                <a href="#">Xe cộ</a>
+                            <li class="menu-3 parent">
+                                <a href="#">Sách</a>
                                 <ul class="menu-child">
-                                    <li><a href="#">Xe máy</a></li>
-                                    <li><a href="#">Xe đạp</a></li>
+                                    <li><a href="#">Truyện tranh</a></li>
+                                    <li><a href="#">Truyện thiếu nhi</a></li>
+                                    <li><a href="#">Sách thiếu nhi</a></li>
+                                    <li><a href="#">Sách giáo khoa</a></li>
+                                    <li><a href="#">Khoa học viễn tưởng</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-2">
-                                <a href="#">Đồ điện tử</a>
-                            </li>
-                            <li class="menu-1 parent">
-                                <a href="#">Xe cộ</a>
+                            <li class="menu-4 parent">
+                                <a href="#">Nội thất</a>
                                 <ul class="menu-child">
-                                    <li><a href="#">Xe máy</a></li>
-                                    <li><a href="#">Xe đạp</a></li>
+                                    <li><a href="#">Bàn ghế</a></li>
+                                    <li><a href="#">Tủ</a></li>
+                                    <li><a href="#">Trang trí</a></li>
+                                    <li><a href="#">Tranh ảnh</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-2">
-                                <a href="#">Đồ điện tử</a>
+                            <li class="menu-5 ">
+                                <a href="#">Giải trí</a>
                             </li>
+                            <li class="menu-6 parent">
+                                <a href="#">Thời trang</a>
+                                <ul class="menu-child">
+                                    <li><a href="#">Nam</a></li>
+                                    <li><a href="#">Nữ</a></li>
+                                    <li><a href="#">Phụ kiện</a></li>
+                                    <li><a href="#">Khác</a></li>
+                                </ul>
+                            </li>
+                            
                         </ul>
                     </div>
                     <div class="mod filter">
                         <h4>Giá bán</h4>
                         <div class="filter-price">
                             <input type="checkbox" value="100000" /> 0 - 100.000 VNĐ <br />
-                            <input type="checkbox" value="200000" /> 100.000 - 200.000 VNĐ <br />
-                            <input type="checkbox" value="500000" /> 200.000 - 500.000 VNĐ <br />
+                            <input type="checkbox" value="500000" /> 100.000 - 500.000 VNĐ <br />
                             <input type="checkbox" value="1000000" /> 500.000 - 1.000.000 VNĐ <br />
                             <input type="checkbox" value="5000000" /> 1.000.000 - 5.000.000 VNĐ <br />
+                            <input type="checkbox" value="5000000" /> Trên 5.000.000 VNĐ <br />
                         </div>
+                    </div>
+                    <div class="mod">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
                     </div>
                 </div>
                 <div class="pri-right">
@@ -187,253 +199,190 @@
                         <div class="main-title">
                             <h3>Rao vặt gần đây</h3>
                         </div>
-                        <div class="main-sort">
+                        <div class="main-sort hidden">
                             <span>Giá</span>
                             <img id="price-filter" src="images/arrow-down.png" alt="" width="23" onclick="change_img()" />
                         </div>
                     </div>
                     <div class="group-item">
-                        <div class="group-title"><h4>Sách</h4></div>
+                        <div class="group-title clearfix"><h4>Sản phẩm nổi bật</h4></div>
                         <div class="item-list">
                             <div class="item clearfix">
-                                <div class="col-md-8 ">
+                                <div class="col-item-1">
                                     <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
                                     </div>
                                     <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                </div>
+                            </div>
+                            <!-- put more item here-->
+                            <div class="item clearfix">
+                                <div class="col-item-1">
+                                    <div class="item-img">
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
                                 </div>
                             </div>
                             <div class="item clearfix">
-                                <div class="col-md-8">
+                                <div class="col-item-1">
                                     <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
                                     </div>
                                     <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
                                 </div>
                             </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-
                         </div>
                         <div class="see-all">
-                            <a href="#">Xem tất cả >></a>
+                            <a href="#" title="Xem tất cả">Xem tất cả >></a>
+                        </div>
+                    </div>
+                    <!-- put more group item here-->
+                    <div class="group-item">
+                        <div class="group-title clearfix"><h4>Sách</h4></div>
+                        <div class="item-list">
+                            <div class="item clearfix">
+                                <div class="col-item-1">
+                                    <div class="item-img">
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                </div>
+                            </div>
+                            <!-- put more item here-->
+                            <div class="item clearfix">
+                                <div class="col-item-1">
+                                    <div class="item-img">
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <div class="col-item-1">
+                                    <div class="item-img">
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-all">
+                            <a href="#" title="Xem tất cả">Xem tất cả >></a>
                         </div>
                     </div>
                     <div class="group-item">
-                        <div class="group-title"><h4>Xe</h4></div>
+                        <div class="group-title clearfix"><h4>Thiết bị điện tử</h4></div>
                         <div class="item-list">
                             <div class="item clearfix">
-                                <div class="col-md-8">
+                                <div class="col-item-1">
                                     <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
                                     </div>
                                     <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                </div>
+                            </div>
+                            <!-- put more item here-->
+                            <div class="item clearfix">
+                                <div class="col-item-1">
+                                    <div class="item-img">
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="item-info">
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                    </div>
+                                </div>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
                                 </div>
                             </div>
                             <div class="item clearfix">
-                                <div class="col-md-8">
+                                <div class="col-item-1">
                                     <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
+                                        <a href="#" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
                                     </div>
                                     <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        <h4><a href="#" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                        <p class="item-price">150.000 VNĐ</p>
+                                        <p class="item-category"><a href="#" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                        <p class="item-location">Quận 11, TP.HCM</p>
+                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
+                                <div class="col-item-2">
+                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
                                 </div>
                             </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-md-8">
-                                    <div class="item-img">
-                                        <a><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a>Hà Nội 36 phố phường</a></h4>
-                                        <p class="clock">1 tiếng trước</p>
-                                        <p class="poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item-price">
-                                    <span class="">150.000 VNĐ</span>
-                                </div>
-                            </div>
-
                         </div>
                         <div class="see-all">
-                            <a href="#">Xem tất cả >></a>
-                        </div>
-                    </div>
-
-                    <div class="advan-search-div advan-desktop hidden-sm hidden-xs">
-                        <div style="position:relative">
-                            <div class="clearfix">
-                                <div class="advan advan-1">
-                                    <h4>Danh mục</h4>
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>Xe</option>
-                                        <option>Đồ điện tử</option>
-                                        <option>Nội thất</option>
-                                        <option>Giải trí</option>
-                                        <option>Sách</option>
-                                    </select>
-
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>Truyện tranh</option>
-                                        <option>Truyện trinh thám</option>
-                                        <option>Sách thiếu nhi</option>
-                                        <option>Khoa học viễn tưởng</option>
-                                        <option>Sách giáo khoa</option>
-                                    </select>
-                                </div>
-                                <div class="advan advan-2">
-                                    <h4>Khu vực</h4>
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>TPHCM</option>
-                                        <option>Hà Nội</option>
-                                        <option>Đà Nẵng</option>
-                                        <option>Cần Thơ</option>
-                                    </select>
-
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>Quận 1</option>
-                                        <option>Quận 2</option>
-                                        <option>Quận 3</option>
-                                        <option>Quận 4</option>
-                                        <option>Quận 5</option>
-                                    </select>
-                                </div>
-                                <div class="advan advan-3">
-                                    <h4>Giá</h4>
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>0 - 100.000 VNĐ</option>
-                                        <option>100.000 - 200.000 VNĐ</option>
-                                        <option>200.000 - 500.000 VNĐ</option>
-                                        <option>500.000 - 1.000.000 VNĐ</option>
-                                        <option>1.000.000 - 5.000.000 VNĐ</option>
-                                        <option>> 5.000.000 VNĐ</option>
-                                    </select>
-                                </div>
-                                <div class="advan advan-4">
-                                    <h4>Mức độ sử dụng</h4>
-                                    <select>
-                                        <option selected value="all">Tất cả</option>
-                                        <option>Rất cũ</option>
-                                        <option>Tương đối cũ</option>
-                                        <option>Mới qua sử dụng</option>
-                                        <option>Mới hoàn toàn</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="close-advan">
-                                <a class="close-advan-btn" title="close">X</a>
-                            </div>
-
-                            <div class="search-btn">
-                                <a>Tìm kiếm</a>
-                            </div>
+                            <a href="#" title="Xem tất cả">Xem tất cả >></a>
                         </div>
                     </div>
                 </div>
@@ -445,7 +394,7 @@
             <div class="foot-mod foot-mod-1">
                 <h4>Liên kết nhanh</h4>
                 <ul>
-                    <li><a><img src="./images/fb.png" alt=""/> Facebook</a></li>
+                    <li><a><img src="./images/fb.png" alt="" /> Facebook</a></li>
                     <li><a><img src="./images/gg.png" alt="" /> Google +</a></li>
                     <li><a><img src="./images/tw.png" alt="" /> Twitter</a></li>
                 </ul>
@@ -494,25 +443,15 @@
                         <label for="pwd">Password:</label>
                         <input type="password" class="form-control" id="pwd">
                     </div>
-                    <script type="text/javascript">
-   $(document).ready(function() {
-		$('#pwd').keydown(function(e) {
-           if ( event.which == 13 ) {
-				$('#btn-login').click();
-			}
-        });
-   });
 
-
-                    </script>
                     <div class="checkbox">
                         <label>Chưa có tài khoản? </label>
                         <a href="#" style="color:red;font-style:italic">Đăng ký</a>
-
-
                     </div>
-                    <div>  <label id="lbl_error" style="color:red;font-style:italic; display:none">Thông tin đăng nhập không đúng! </label> </div>
-                    <button id='btn-login' type="submit" onclick="ValidateForm();" class="btn btn-info">Đăng nhập</button>
+                    <div><label id="lbl_error" style="color:red;font-style:italic; display:none">Thông tin đăng nhập không đúng! </label> </div>
+                    <div class="popup-btn-login">
+                        <button id='btn-login' type="submit" onclick="ValidateForm();" class="btn btn-info">Đăng nhập</button>
+                    </div>
 
 
                 </div>
@@ -541,7 +480,17 @@
 
 
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#pwd').keydown(function (e) {
+                if (event.which == 13) {
+                    $('#btn-login').click();
+                }
+            });
+        });
 
+
+    </script>
     <script>
 
         function change_img(type) {
@@ -552,34 +501,29 @@
 
         $(document).ready(function () {
             $('.menu li').click(function (e) {
-                if ($(this).hasClass('active'))
-                {
+                if ($(this).hasClass('active')) {
                     $(this).removeClass('active');
                 }
                 else {
                     $('.menu li').removeClass('active');
                     $(this).addClass('active');
                 }
-                
+
             });
             if ($(window).width() < 991)
                 $('.menu li.parent').css('background-position-x', $(window).width() - 50 + 'px');
 
-            $('#advan-search').click(function () {
-                if ($('.advan-mobile').css('display') == 'none')
-                    $('.advan-mobile').show();
-                else $('.advan-mobile').hide();
-
-                if ($('.advan-desktop').css('display') == 'none')
-                    $('.advan-desktop').show();
-                else $('.advan-desktop').hide();
-            })
-            $('.close-advan-btn').click(function () {
-                $('.advan-search-div').hide();
-            });
         })
     </script>
-
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=865642280219960";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 </html>

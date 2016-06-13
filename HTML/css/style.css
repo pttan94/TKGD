@@ -66,8 +66,18 @@ a {
     padding-left: 26px;
     background: url(../images/user.png) 0 0 no-repeat;
     background-size: 15px;
+    color:#000;
 }
+a:focus {
+    outline:none !important;
+}
+.top a:visited {
+        color:#000;
 
+}
+header {
+    background:#f4f4f4;
+}
 .header {
     margin-bottom: 30px;
 }
@@ -82,7 +92,7 @@ a {
     width: 77%;
     float: right;
     /*padding:0 10px;*/
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .logo img {
@@ -93,12 +103,12 @@ a {
 .search {
     float: left;
     width: 75%;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 
 .search-input {
     position: relative;
-    width: 70%;
+    /*width: 70%;*/
 }
 
 .search button {
@@ -112,71 +122,44 @@ a {
     border: 1px solid #00b7f1;
 }
 
+
 .advan-search {
-    width: 28%;
-    float: left;
-    margin-left: 2%;
-    margin-top: 10px;
-}
-
-.advan-search a {
-    color: #00b7f1;
-    cursor: pointer;
-}
-
-.advan-search a:hover {
-    font-weight: bold;
-}
-
-.advan-search-div {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background: #FFFFCE;
-    text-align: center;
-    border: 1px solid #f4f4f4;
-}
-
-.advan-mobile {
-    position: relative;
-    float: left;
-    margin-top: 10px;
-}
-
-.advan {
-    width: 25%;
-    float: left;
-    margin-top: 20px;
+    /*text-align: center;*/
+    width:100%;
+    margin-top:15px;
 }
 
 .advan h4 {
     margin-bottom: 20px;
 }
 
+.advan-search .advan {
+    width:27%;
+    float:left;
+    margin-right:1%;
+}
 .advan select {
-    width: 80%;
-    height: 25px;
+    width: 100%;
+    outline:none;
+    height: 30px;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-indent:5px;
+    /*height:300px;*/
+    /*overflow-x:scroll;*/
 }
-
-.close-advan {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-weight: bold;
+.main-category {
+    background:#e4e4e4;
 }
-
 .search-btn {
-    clear: both;
-    height: 40px;
+     margin-top:6px;
+    width: 16%;
+    float: left;
+    text-align: left;
 }
 
 .search-btn a {
-    padding: 10px 15px;
+    padding: 7px 15px;
     border-radius: 3px;
     background: #0099FF;
     color: #fff;
@@ -189,9 +172,10 @@ a {
 }
 
 .search input {
-    padding: 9px 20px;
+    padding: 8px 20px;
     border: 1px solid #e8e8e8;
-    width: 100%;
+    /*width: 100%;*/
+    width:98%;
     font-family: 'Arial', sans-serif;
     color: #cdcdcd;
     border-radius: 4px;
@@ -207,9 +191,7 @@ a {
 }
 
 .keysearch {
-    float: left;
-    width: 100%;
-    margin-top: 8px;
+    margin-bottom: 8px;
     color: #666;
 }
 
@@ -264,12 +246,24 @@ a {
 
 .main-header {
     border-bottom: 1px solid #e4e4e4;
-    padding: 0 15px;
+    padding: 0 20px;
+    background:#FFFFCE;
 }
 
 .main-title {
-    width: 66.66666%;
+    /*width: 66.66666%;*/
+    width:100%;
     float: left;
+}
+.main-title h3 {
+    text-transform:uppercase;
+    /*padding-left: 20px;*/
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size:16px !important;
+    
 }
 
 .main-sort {
@@ -300,14 +294,17 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: 1px solid #e4e4e4;
+    color:#000;
 }
 
 .mod h4 {
     padding-left: 20px;
     color: #000;
+    font-size:16px;
     margin-bottom: 15px;
     margin-top: 15px;
     font-weight: bold;
+    text-transform:uppercase;
 }
 
 .menu > li {
@@ -367,8 +364,24 @@ a {
 }
 
 .menu-2 > a {
-    background: url(../images/b2.png) no-repeat 5px -5px;
-    background-size: 21px;
+    background: url(../images/b2.png) no-repeat 5px -2px;
+    background-size: 19px;
+}
+.menu-3 > a {
+    background: url(../images/b7.png) no-repeat 5px 0px;
+    background-size: 16px;
+}
+.menu-4 > a {
+    background: url(../images/b3.png) no-repeat 5px 0px;
+    background-size: 15px;
+}
+.menu-5 > a {
+    background: url(../images/b4.png) no-repeat 5px 0px;
+    background-size: 16px;
+}
+.menu-6 > a {
+    background: url(../images/b6.png) no-repeat 5px -2px;
+    background-size: 18px;
 }
 
 .menu > li:hover {
@@ -380,18 +393,21 @@ a {
 }
 
 .menu li.active > a {
-    color: #666;
+    color: #000;
     font-weight: bold;
 }
 
 .menu > li:hover > a {
-    color: #666;
+    color: #000;
     font-weight: bold;
 }
 
 .menu a:hover {
-    color: #666;
+    color: #000;
     font-weight: bold;
+}
+.menu a:visited {
+    color: #000;
 }
 
 .mod.filter {
@@ -408,14 +424,6 @@ a {
     margin-bottom: 13px;
 }
 
-.pri-right h3 {
-    font-size: 25px;
-    padding: 10px;
-    margin: 0;
-    font-weight: bold;
-    /*border-bottom:1px solid #666;*/
-    /*margin-left:20px;*/
-}
 
 .group-item {
     margin-left: 20px;
@@ -429,13 +437,36 @@ a {
     border-bottom: none;
     margin-bottom: 0;
 }
-
+.group-title {
+   
+}
 .group-title h4 {
     font-weight: bold;
+    background: #FFCB39;
+    float:left;
+     position:relative;
+
+    padding: 10px;
+    padding-left: 20px;
+    color: #fff;
+}
+.group-title h4::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 20px solid transparent;
+    border-left: 13px solid #FFCB39;
+    border-right: 0 solid transparent;
+    border-bottom: 19px solid transparent;
+    top: 0;
+    position:absolute;
+    right: -13px;
 }
 
 .item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .item .item-img {
@@ -445,6 +476,16 @@ a {
 
 .item .item-img img {
     width: 100%;
+    min-height:150px;
+}
+.col-item-1 {
+    width:80%;
+    float:left;
+}
+.col-item-2 {
+    width:20%;
+    float:left;
+    text-align:right;   
 }
 
 .item .item-info {
@@ -456,6 +497,8 @@ a {
 .item-info h4 {
     font-weight: bold;
     color: #0099FF;
+    margin:0px;
+    padding-bottom:10px;
 }
 
 .item-info h4 a {
@@ -466,23 +509,42 @@ a {
 .item-info h4 a:hover {
     color: #FFCB39;
 }
+.item-info p {
+    padding-top: 3px;
+    padding-bottom:3px;
+}
 
-.clock {
+/*.item-clock {
     padding-left: 17px;
     background: url(../images/clock.png) no-repeat 1px 5px;
     background-size: 14px;
-}
+}*/
 
-.poster {
+.item-category {
+     padding-left: 20px;
+    background: url(../images/category.png) no-repeat 0px 5px;
+    background-size: 16px;
+}
+.item-category a {
+    color: green;
+}
+.item-category a:hover {
+    color:#FFCB39;
+}
+.item-location {
+     padding-left: 20px;
+    background: url(../images/location.png) no-repeat 0px 5px;
+    background-size: 16px;
+}
+.item-poster {
     padding-left: 20px;
-    background: url(../images/poster.png) no-repeat 0px 3px;
+    background: url(../images/poster.png) no-repeat 0px 6px;
     background-size: 18px;
 }
 
 .item-price {
     font-weight: bold;
-    font-size: 18px;
-    text-align: center;
+    font-size:16px;
 }
 
 .see-all {
@@ -492,6 +554,9 @@ a {
 
 .see-all a {
     color: #0099FF;
+}
+.see-all a:hover {
+    color: #FFCB39;
 }
 
 .footer {
@@ -546,7 +611,7 @@ a {
 }
 
 footer {
-    background: #f4f4f4;
+    background: #e4e4e4;
     text-align: center;
     font-weight: bold;
     padding: 5px 0;
@@ -612,7 +677,9 @@ li.end:hover {
     padding-right: 20px;
 }
 /*----------------------------------------------------------------------*/
-
+.popup-btn-login {
+    text-align:center;
+}
 /*----------------------------------------------------------------------*/
 @media (min-width:1200px) {
     .container {
@@ -673,20 +740,30 @@ li.end:hover {
     .search-input {
         width: 100%;
     }
+    .search input {
+        width: 100%;
+    }
 
     .advan-search {
         width: 100%;
         text-align: center;
     }
-
-    .advan select {
+    .advan-search .advan {width:100%;}
+    .advan-search select {
         width: 100%;
+        margin-right:0;
+        text-indent:5px;
     }
 
     .keysearch {
         display: none;
     }
-
+    .search-btn {
+        width:100%;
+        text-align:center;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
     .post {
         width: 100%;
         margin-top: 30px;
@@ -708,11 +785,10 @@ li.end:hover {
     .item .item-info {
         width: 100%;
         padding-left: 0;
+        padding-top:20px;
     }
 
-    .item-price span {
-        color: #FFCB39;
-    }
+
 
     .main-title {
         width: 100%;
@@ -731,17 +807,32 @@ li.end:hover {
     .advan {
         width: 100%;
         margin-top: 0;
-        padding: 0 10px;
     }
 
-    .item .col-md-8 {
+
+    .col-item-1 {
+    width:100%;
+    float:left;
         padding: 0;
-    }
+
+}
+.col-item-2 {
+    width:100%;
+    float:left;
+        padding: 0;
+        text-align:left;
+        padding-left:3px;
+
+}
 }
 
 @media (max-width:768px) {
 }
-
+@media (min-width:768px) {
+    .modal-dialog {
+        width:500px !important;
+    }
+}
 @media (max-width:720px) {
 }
 
