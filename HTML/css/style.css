@@ -464,6 +464,9 @@ header {
     position:absolute;
     right: -13px;
 }
+.item-list {
+        margin-top: 20px;
+}
 
 .item {
     margin-bottom: 30px;
@@ -645,7 +648,7 @@ footer {
 }
 
 .pagination {
-    float: left;
+    text-align:center;
     margin-bottom: 30px;
 }
 
@@ -824,6 +827,7 @@ li.end:hover {
         padding-left:3px;
 
 }
+.facebook {display:none;}
 }
 
 @media (max-width:768px) {
