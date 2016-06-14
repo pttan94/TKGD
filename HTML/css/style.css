@@ -59,22 +59,32 @@ a {
 .top {
     float: right;
     font-weight: bold;
-    margin: 5px 0;
+    padding: 5px 0;
+    position:relative;
 }
 
-.top a {
+.top>a {
     padding-left: 26px;
     background: url(../images/user.png) 0 0 no-repeat;
     background-size: 15px;
     color:#000;
 }
+#user_top {
+     color:#00b7f1;
+}
+.top a:hover {
+    color:#00b7f1;
+}
+.top .user_top_info a {
+    color:#00b7f1;
+}
+.top .user_top_info a:hover {
+    color:#FFCB39;
+}
 a:focus {
     outline:none !important;
 }
-.top a:visited {
-        color:#000;
 
-}
 header {
     background:#f4f4f4;
 }
@@ -274,11 +284,11 @@ header {
     padding: 10px;
 }
 
-.pri-left .mod {
+.pri-left .mod,.pri-left .mod-account {
     border: 1px solid #e4e4e4;
 }
 
-.mod {
+.mod, .mod-account {
     margin-bottom: 20px;
     background: #fff;
 }
@@ -307,10 +317,14 @@ header {
     text-transform:uppercase;
 }
 
+.menu {
+}
 .menu > li {
     list-style-type: none;
-    padding: 5px;
-    border-bottom: 1px solid #e4e4e4;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    font-size:16px;
 }
 
 .menu > li:last-child {
@@ -438,15 +452,15 @@ header {
     border-bottom: none;
     margin-bottom: 0;
 }
+
 .group-title {
    
 }
 .group-title h4 {
     font-weight: bold;
     background: #FFCB39;
-    float:left;
-     position:relative;
-
+    float: left;
+    position: relative;
     padding: 10px;
     padding-left: 20px;
     color: #fff;
@@ -466,7 +480,7 @@ header {
     right: -13px;
 }
 .item-list {
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 .item {
@@ -563,6 +577,7 @@ header {
     color: #FFCB39;
 }
 
+
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -621,7 +636,9 @@ footer {
     padding: 5px 0;
 }
 
-/*---------------------------------------------------------------*/
+.popup-btn-login {
+    text-align:center;
+}
 .scrollToTop {
     bottom: 0;
     height: 46px;
@@ -629,6 +646,8 @@ footer {
     left: 10px;
     width: 60px;
 }
+/*---------------------------------------------------------------*/
+
 
 .pagination {
 
@@ -660,28 +679,97 @@ footer {
     border: 1px solid #00b7f1;
     background: #00b7f1;
 }
-
-li.start {
-    background: url(../images/first.png) no-repeat 10px center;
-    padding-left: 20px;
-}
-
-li.start:hover {
-    background: url(../images/first-hv.png) no-repeat 10px center #00b7f1;
-}
-
-li.end {
-    background: url(../images/last.png) no-repeat 90% center;
-    padding-right: 20px;
-}
-
-li.end:hover {
-    background: url(../images/last-hv.png) no-repeat 90% center #00b7f1;
-    padding-right: 20px;
-}
 /*----------------------------------------------------------------------*/
-.popup-btn-login {
-    text-align:center;
+.user_top_info {
+    display:none;
+    position:absolute;
+    top:29px;
+    left:0px;
+    background:#fff;
+    z-index:10000;
+    width:100%;
+    padding:10px 0;
+}
+.top:hover .user_top_info {
+    display:block;
+}
+.user_top_info li {
+    padding: 5px 0px 5px 15px;
+    list-style-type:none;
+    display:block;
+}
+ .detail-post {
+     margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: block;
+ }
+ .row-item p {
+     float:left;
+     text-align:right;
+     padding-right:20px;
+     width:25%;
+ }
+ .row-item input {
+     float:left;
+     width:60%;
+     height:30px;
+ }
+ .row-item select {
+     float:left;
+     width:60%;
+     height:30px;
+     padding-top:5px;
+     padding-bottom:5px;
+ }
+ .row-item textarea {
+     float:left;
+     width:60%;
+ }
+ .post-submit {
+     text-align:center;
+ }
+ .post-submit button {
+     background:#00b7f1;
+     color:#fff;
+ }
+ .post-submit button:hover
+ {
+     background:#FFCB39;
+     color:#fff;
+ }
+ /*----------------------------------------------------------------------*/
+ .mod-account h3 {
+    background:  #FFFFCE no-repeat 16px center;
+    background-size: 23px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #e4e4e4;
+    color:#000;
+}
+ ul.account-info li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left:15px;
+    font-size:16px;
+}
+ul.account-info li:first-child {
+    padding-top: 15px;
+}
+ul.account-info li:last-child {
+    padding-bottom: 15px;
+}
+
+ul.account-info li a{
+    color: #000 !important;
+}
+
+ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.active > a {
+    font-weight: bold;
 }
 /*----------------------------------------------------------------------*/
 @media (min-width:1200px) {
@@ -816,20 +904,32 @@ li.end:hover {
 
 
     .col-item-1 {
-    width:100%;
-    float:left;
+        width: 100%;
+        float: left;
         padding: 0;
+    }
 
-}
-.col-item-2 {
-    width:100%;
-    float:left;
+    .col-item-2 {
+        width: 100%;
+        float: left;
         padding: 0;
+        text-align: left;
+        padding-left: 3px;
+    }
+
+    .facebook {
+        display: none;
+    }
+    .row-item p {
         text-align:left;
-        padding-left:3px;
+    }
 
-}
-.facebook {display:none;}
+    .row-item p, .row-item textarea, .row-item input {
+        width: 100%;
+    }
+    .user_top_info {
+        display:none !important;
+    }
 }
 
 @media (max-width:768px) {

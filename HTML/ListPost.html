@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DoCu.vn</title>
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta content="telephone=no" name="format-detection" />
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/validator.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top">
+                <a id="user_top" href="./AccountInfo.html" title="Thông tin tài khoản">User123@gmail.com</a>
+                <ul class="user_top_info">
+                    <li class="">
+                        <a title="Thông tin tài khoản" href="./AccountInfo.html">Thông tin tài khoản</a>
+                    </li>
+                    <li class="">
+                        <a title="Danh sách tin đăng" href="./ListPost.html">Danh sách tin đăng</a>
+                    </li>
+                    <li class="">
+                        <a title="Đổi mật khẩu" href="./ChangePassword.html">Đổi mật khẩu</a>
+                    </li>
+                    <li class="">
+                        <a title="Đăng xuất" href="./Home.html">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="header clearfix">
+                <div class="top-left">
+                    <div class="logo">
+                        <a href="./Home.html" title=""><img src="./images/logo.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="top-right clearfix">
+                    <div class="search">
+                        <div class="search-input clearfix">
+                            <input type="text" size="35" placeholder="Nhập từ khóa cần tìm..." />
+                            <!--<button type="submit"><img src="images/search.png" width="20" /></button>-->
+                        </div>
+
+                        <div class="keysearch">
+                            <span>Từ khóa:</span> Harry Potter, Exciter, Samsung Galaxy S6, Sách giáo khoa cũ, Trang trí nội thất, ...
+                        </div>
+                        <div class="advan-search clearfix">
+                            <div class="advan">
+                                <!--<span>Danh mục</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả danh mục</option>
+                                    <option class="main-category">---Sách---</option>
+                                    <option>Truyện tranh</option>
+                                    <option>Truyện trinh thám</option>
+                                    <option>Sách thiếu nhi</option>
+                                    <option>Khoa học viễn tưởng</option>
+                                    <option>Sách giáo khoa</option>
+                                    <option class="main-category">---Xe---</option>
+                                    <option>Xe máy</option>
+                                    <option>Ô tô</option>
+                                    <option>Xe tải</option>
+                                    <option>Xe đạp</option>
+                                    <option>Phụ kiện xe</option>
+                                    <option class="main-category">---Đồ điện tử---</option>
+                                    <option>Tivi</option>
+                                    <option>Máy lạnh</option>
+                                    <option>Máy giặt</option>
+                                    <option>Loa</option>
+                                    <option class="main-category">---Nội thất---</option>
+                                    <option>Bàn ghế</option>
+                                    <option>Tủ</option>
+                                    <option>Trang trí</option>
+                                    <option class="main-category">---Giải trí---</option>
+                                    <option class="main-category">---Thời trang---</option>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                    <option>Phụ kiện</option>
+
+                                </select>
+
+                            </div>
+                            <div class="advan">
+                                <!--<span>Khu vực</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả khu vực</option>
+                                    <option class="main-category">---TPHCM---</option>
+                                    <option>Quận 1</option>
+                                    <option>Quận 2</option>
+                                    <option>Quận 3</option>
+                                    <option>Quận 4</option>
+                                    <option>Quận 5</option>
+                                    <option class="main-category">---Hà Nội---</option>
+                                    <option>Quận Cầu Giấy</option>
+                                    <option>Quận Hoàn Kiếm</option>
+                                    <option>Quận Đống Đa</option>
+                                    <option>Quận Hai Bà Trưng</option>
+                                    <option>Quận Thanh Xuân</option>
+                                    <option class="main-category">---Đà Nẵng---</option>
+                                    <option class="main-category">---Cần Thơ---</option>
+                                </select>
+
+                            </div>
+                            <div class="advan">
+                                <!--<span>Giá</span>-->
+                                <select>
+                                    <option selected value="all">Tất cả giá</option>
+                                    <option>0 - 100.000 VNĐ</option>
+                                    <option>100.000 - 200.000 VNĐ</option>
+                                    <option>200.000 - 500.000 VNĐ</option>
+                                    <option>500.000 - 1.000.000 VNĐ</option>
+                                    <option>1.000.000 - 5.000.000 VNĐ</option>
+                                    <option>> 5.000.000 VNĐ</option>
+                                </select>
+
+                            </div>
+                            <div class="search-btn">
+                                <a href="./Search.html" title="Tìm kiếm sản phẩm">Tìm kiếm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <a href="./Post.html" title="Đăng tin bán sản phẩm"><img src="images/post.png" alt="" /> Đăng tin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="primary clearfix">
+                <div class="pri-left">
+                    <div class="mod-account">
+                        <h3>User123@gmail.com</h3>
+                        <ul class="account-info">
+                            <li class="">
+                                <a title="Thông tin tài khoản" href="./AccountInfo.html">Thông tin tài khoản</a>
+                            </li>
+                            <li class="active">
+                                <a title="Danh sách tin đăng" href="./ListPost.html">Danh sách tin đăng</a>
+                            </li>
+                            <li class="">
+                                <a title="Đổi mật khẩu" href="./ChangePassword.html">Đổi mật khẩu</a>
+                            </li>
+                            <li class="">
+                                <a title="Đăng xuất" href="./Home.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pri-right">
+                    <div class="clearfix main-header">
+                        <div class="main-title">
+                            <h3>Danh sách tin đã đăng</h3>
+                        </div>
+                    </div>
+                    <div class="detail-post">
+                        <div class="group-item">
+                            <div class="item-list">
+                                <div class="item clearfix">
+                                    <div class="col-item-1">
+                                        <div class="item-img">
+                                            <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                            <p class="item-price">150.000 VNĐ</p>
+                                            <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                            <p class="item-location">Quận 11, TP.HCM</p>
+                                            <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-item-2">
+                                        <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                    </div>
+                                </div>
+                                <!-- put more item here-->
+                                <div class="item clearfix">
+                                    <div class="col-item-1">
+                                        <div class="item-img">
+                                            <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-2.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                            <p class="item-price">150.000 VNĐ</p>
+                                            <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                            <p class="item-location">Quận 11, TP.HCM</p>
+                                            <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-item-2">
+                                        <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                    </div>
+                                </div>
+                                <div class="item clearfix">
+                                    <div class="col-item-1">
+                                        <div class="item-img">
+                                            <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-3.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="item-info">
+                                            <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
+                                            <p class="item-price">150.000 VNĐ</p>
+                                            <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
+                                            <p class="item-location">Quận 11, TP.HCM</p>
+                                            <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-item-2">
+                                        <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination clearfix">
+                                <ul class="clearfix">
+                                    <li class="active">1</li>
+                                    <li><a>2</a></li>
+                                    <li><a>3</a></li>
+                                    <li><a>4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container clearfix">
+            <div class="foot-mod foot-mod-1">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="http://www.facebook.com/pttan94" title="Facebook"><img src="./images/fb.png" alt="" /> Facebook</a></li>
+                    <li><a href="#" title="Google +"><img src="./images/gg.png" alt="" /> Google +</a></li>
+                    <li><a href="#" title="Twitter"><img src="./images/tw.png" alt="" /> Twitter</a></li>
+                </ul>
+            </div>
+            <div class="foot-mod foot-mod-2">
+                <h4>Về chúng tôi</h4>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Quy định</a></li>
+                    <li><a href="#">Báo lỗi</a></li>
+                </ul>
+            </div>
+            <div class="foot-mod foot-mod-3">
+                <h4>Được chứng nhận bởi</h4>
+                <img src="./images/cer.png" alt="" />
+            </div>
+            <div class="foot-mod foot-mod-4">
+                <h4>Phiên bản di động</h4>
+                <img src="./images/gg play.png" alt="" />
+                <img src="./images/app store.png" alt="" />
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright 2016
+    </footer>
+</body>
+</html>
