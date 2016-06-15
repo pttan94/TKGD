@@ -624,9 +624,9 @@ header {
 }
 
 .foot-mod-4 img {
-    width: 70%;
+    width: 60%;
     margin-bottom: 20px;
-    height: 45px;
+    height: 55px;
 }
 
 footer {
@@ -936,7 +936,7 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
 }
 @media (min-width:768px) {
     .modal-dialog {
-        width:500px !important;
+        width:400px !important;
     }
 }
 @media (max-width:720px) {
