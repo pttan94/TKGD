@@ -771,6 +771,20 @@ ul.account-info li a{
 ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.active > a {
     font-weight: bold;
 }
+/*--------------------Custom Owl-Carosel---------------------------*/
+.owl-item img{
+    width:100%;
+    height:200px;
+}
+.owl-carousel{
+    width:70%;
+}
+.carousel-caption { position:absolute; width:80%; left:10%;  z-index: 10;  text-align:left}
+.carousel-caption .wr-tt { width:100%; float:left; padding:10px 0; color: #fff; text-align: center; background:rgba(22,21,23,0.3); -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px;}
+.carousel-caption .wr-tt a{ font-size:26px; color:#fdfdfd; text-transform:none; float:left; width:100%; text-transform:uppercase}
+.carousel-caption .wr-tt a:hover { color: #0083ff; text-decoration:none}
+.carousel-caption .wr-tt p { font-size:18px; font-weight:normal; text-transform:uppercase; float:left; width:100%; margin-top:10px; line-height:24px;}
+.carousel-caption .btn { text-shadow: none}
 /*----------------------------------------------------------------------*/
 @media (min-width:1200px) {
     .container {
