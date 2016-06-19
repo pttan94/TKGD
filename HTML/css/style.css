@@ -148,6 +148,11 @@ header {
     float:left;
     margin-right:1%;
 }
+.advan-search .advan-check {
+    width:15%;
+    float:left;
+    margin-right:1%;
+}
 .advan select {
     width: 100%;
     outline:none;
@@ -500,6 +505,14 @@ header {
     width:80%;
     float:left;
 }
+.col-item-detail1{
+    width:20%;
+    float:left;
+}
+.col-item-detail2{
+    width:60%;
+    float:left;
+}
 .col-item-2 {
     width:20%;
     float:left;
@@ -559,7 +572,16 @@ header {
     background: url(../images/poster.png) no-repeat 0px 6px;
     background-size: 18px;
 }
-
+.item-accept {
+     padding-left: 20px;
+    background: url(../images/accept.ico) no-repeat 0px 0px;
+    background-size: 16px;
+}
+.item-decline {
+     padding-left: 20px;
+    background: url(../images/decline.png) no-repeat 0px 1px;
+    background-size: 15px;
+}
 .item-price {
     font-weight: bold;
     font-size:16px;
