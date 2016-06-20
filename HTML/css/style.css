@@ -808,6 +808,34 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
 .carousel-caption .wr-tt p { font-size:18px; font-weight:normal; text-transform:uppercase; float:left; width:100%; margin-top:10px; line-height:24px;}
 .carousel-caption .btn { text-shadow: none}
 /*----------------------------------------------------------------------*/
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+.table{
+    border:none;
+}
+.group-carousel{
+    margin-bottom:0px;
+    border-bottom:none;
+    padding-bottom:0px;
+
+}
+.hash{
+    margin-top:-35px;
+}
+.hash img{
+    width:50px;
+    height:40px;
+   
+}
+.secondary {
+    padding:5px;
+}
+.detail-product{
+    margin-left:15px;
+    margin-right:20px;
+}
+
 @media (min-width:1200px) {
     .container {
         max-width: 1180px;
