@@ -796,7 +796,7 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
 /*--------------------Custom Owl-Carosel---------------------------*/
 .owl-item img{
     width:100%;
-    height:200px;
+    height:300px;
 }
 .owl-carousel{
     width:70%;
@@ -807,6 +807,8 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
 .carousel-caption .wr-tt a:hover { color: #0083ff; text-decoration:none}
 .carousel-caption .wr-tt p { font-size:18px; font-weight:normal; text-transform:uppercase; float:left; width:100%; margin-top:10px; line-height:24px;}
 .carousel-caption .btn { text-shadow: none}
+
+.group-carousel{margin-left:0px !important;}
 /*----------------------------------------------------------------------*/
 .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
     border: none;
