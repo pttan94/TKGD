@@ -836,6 +836,13 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
     margin-right:20px;
 }
 
+.help-block{
+    margin-top:35px !important;
+    margin-left:215px;
+    margin-bottom:0px !important;
+}
+/*--------------------------Responsive--------------------------------------------*/
+
 @media (min-width:1200px) {
     .container {
         max-width: 1180px;

@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/validator.js"></script>
 </head>
@@ -213,24 +214,28 @@
                         </div>
                     </div>
                     <div class="detail-post">
-                        <form id="myForm" role="form"  novalidate="">
+                        <form id="myForm" role="form" data-toggle="validator" novalidate="">
                             <div class="contact-info ">
                                 <h4>Thông tin liên hệ</h4>
                                 <div class="row-item form-group clearfix">
                                     <p>Họ và tên</p>
-                                    <input type="text" class="form-control" size="50" value="user123@gmail.com" />
+                                    <input type="text" class="form-control" size="50" value="user123@gmail.com" required/>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Email</p>
-                                    <input type="email" class="form-control" size="50" value="user123@gmail.com"  />
+                                    <input type="email" class="form-control" size="50" value="user123@gmail.com" required />
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Số điện thoại</p>
-                                    <input type="number" class="form-control" value="0909909909" />
+                                    <input type="number" class="form-control" value="0909909909" required/>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Địa chỉ</p>
-                                    <input type="text" class="form-control" size="150" value="227 NVC, P5, Q.5, TPHCM" />
+                                    <input type="text" class="form-control" size="150" value="227 NVC, P5, Q.5, TPHCM" required/>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="post-content">
@@ -362,7 +367,8 @@
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Tiêu đề</p>
-                                    <input type="text" class="form-control" size="250" />
+                                    <input type="text" class="form-control" size="250" required/>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Nội dung</p>
@@ -370,7 +376,8 @@
                                 </div>
                                 <div class="row-item form-group clearfix">
                                     <p>Giá (VNĐ)</p>
-                                    <input type="number" class="form-control"  />
+                                    <input type="number" class="form-control" required />
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="row-item form-group clearfix image">
                                     <p>Hình ảnh</p>
