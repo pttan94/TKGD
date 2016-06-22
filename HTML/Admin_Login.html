@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
-<html >
+﻿  <!DOCTYPE html>
+  <html >
   <head>
     <meta charset="UTF-8">
     <title>Quản trị Website</title>
-        <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="admin_css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -15,47 +15,47 @@
   <body>
 
     <div id="boxForm">
-	<div class="header">
-		  <h2 id="title">Docu.vn</h2>
-		  <img class="logo" src="./images/logo.jpg" alt="" >
-  </div>
-  <form>
-    <input id="username" class='text' type='text' name='mail' placeholder='Tên đăng nhập' >
-    <br>
-    <input class='text' id='pwd'  type='password' placeholder='Mật khẩu' >
-    <br>
-
-    <div id="lbl_error" class="error" style="color:red;font-style:italic; display:none">
-      <label  >Thông tin đăng nhập không đúng! </label>
+     <div class="header">
+      <h2 id="title">Docu.vn</h2>
+      <img class="logo" src="./images/logo.jpg" alt="" >
     </div>
-        <br>
+    <form>
+      <input id="username" class='text' type='text' name='mail' placeholder='Tên đăng nhập' >
+      <br>
+      <input class='text' id='pwd'  type='password' placeholder='Mật khẩu' >
+      <br>
 
-    <input id='rememberMe' name='rememberMe' type='checkbox'> <label>Remember me</label>
-    <br>
-    <input class='button'  onclick="ValidateForm();" value='Đăng Nhập'>
-  </form>
-</div>
+      <div id="lbl_error" class="error" style="color:red;font-style:italic; display:none">
+        <label  >Thông tin đăng nhập không đúng! </label>
+      </div>
+      <br>
 
-         <script>
+      <input id='rememberMe' name='rememberMe' type='checkbox'> <label>Remember me</label>
+      <br>
+      <input class='button'  onclick="ValidateForm();" value='Đăng Nhập'>
+    </form>
+  </div>
+
+  <script>
    function ValidateForm(){
      var username=$("#username").val();
-   var pass=$("#pwd").val();
+     var pass=$("#pwd").val();
 
-   if(username =="admin" && pass=="admin")
-   {
-      //$("#lbl_error").hide();
-     // alert("Đăng nhập thành công!");
-      window.location = "./Admin_Home.html";
-   }
-   else {
+     if(username =="admin" && pass=="admin")
+     {
+        //$("#lbl_error").hide();
+       // alert("Đăng nhập thành công!");
+       window.location = "./Admin_Home.html";
+     }
+     else {
       $("#lbl_error").show();
-   }
+    }
 
     return false;
-   }
+  }
 
 
-    </script>
-    
-  </body>
+</script>
+
+</body>
 </html>
