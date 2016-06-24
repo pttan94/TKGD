@@ -192,7 +192,8 @@ header {
     /*width: 100%;*/
     width:98%;
     font-family: 'Arial', sans-serif;
-    color: #cdcdcd;
+    /*color: #cdcdcd;*/
+    color:#000;
     border-radius: 4px;
     background: #fff;
     float: left;
@@ -799,16 +800,56 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
     height:300px;
 }
 .owl-carousel{
-    width:70%;
+    width:95%;
+    margin: auto;
+    margin-top: 25px;
 }
-.carousel-caption { position:absolute; width:80%; left:10%;  z-index: 10;  text-align:left}
-.carousel-caption .wr-tt { width:100%; float:left; padding:10px 0; color: #fff; text-align: center; background:rgba(22,21,23,0.3); -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px;}
-.carousel-caption .wr-tt a{ font-size:26px; color:#fdfdfd; text-transform:none; float:left; width:100%; text-transform:uppercase}
-.carousel-caption .wr-tt a:hover { color: #0083ff; text-decoration:none}
-.carousel-caption .wr-tt p { font-size:18px; font-weight:normal; text-transform:uppercase; float:left; width:100%; margin-top:10px; line-height:24px;}
-.carousel-caption .btn { text-shadow: none}
-
-.group-carousel{margin-left:0px !important;}
+.carousel-caption {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    z-index: 10;
+    text-align: left;
+}
+.carousel-caption .wr-tt {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(22,21,23,0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.carousel-caption .wr-tt a {
+    font-size: 26px;
+    color: #fdfdfd;
+    text-transform: none;
+    float: left;
+    width: 100%;
+    text-transform: uppercase;
+}
+.carousel-caption .wr-tt a:hover {
+    color: #0083ff;
+    text-decoration: none;
+}
+.carousel-caption .wr-tt p {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 24px;
+}
+.carousel-caption .btn {
+    text-shadow: none;
+}
+.group-carousel {
+    margin-left: 0px !important;
+}
 /*----------------------------------------------------------------------*/
 .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
     border: none;
@@ -823,7 +864,8 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
 
 }
 .hash{
-    margin-top:-35px;
+    width:100%;
+    text-align:center;
 }
 .hash img{
     width:50px;
@@ -842,6 +884,58 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
     margin-top:35px !important;
     margin-left:215px;
     margin-bottom:0px !important;
+}
+
+.product-info-item-img {
+    width: 45%;
+    float:left;
+}
+.product-info {
+    width:55%;
+    float:left;
+    padding-left:20px;
+}
+.product-info h3 {
+        
+    font-size: 30px;
+    font-weight: bold;
+    color: #00b7f1;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    }
+.product-info-item {
+    width:100%;
+    margin-bottom:10px;
+}
+
+.product-info-item .info-1 {
+    width:30%;
+    float:left;
+    font-weight:bold;
+}
+.product-info-item .info-2 {
+    width:70%;
+    float:left;
+}
+.description {
+    float:left;
+    margin:10px;
+    width:100%;
+}
+.edit {
+    width:100%;
+    float:left;
+    text-align:center;
+}
+.edit-post {
+    background-color:#00b7f1;
+    border-color:#00b7f1;
+    color:#fff;
+}
+.delete-post {
+    /*background-color:#00b7f1;
+    border-color:#00b7f1;
+    color:#fff;*/
 }
 /*--------------------------Responsive--------------------------------------------*/
 
@@ -1002,6 +1096,33 @@ ul.account-info > li:hover > a, ul.account-info a:hover, ul.account-info li.acti
     }
     .user_top_info {
         display:none !important;
+    }
+    .row-item select {
+        width:100%;
+    }
+
+    .description {
+        margin:0;
+    }
+    .product-info {
+        width: 100%;
+        padding-left:0px;
+    }
+   
+    .product-info-item-img {
+        width: 100%;
+    }
+    .product-info-item .info-1 {
+        width: 45%;
+    }
+    .product-info-item .info-2 {
+        width:55%;
+    }
+    .owl-carousel {
+        width:100%;
+    }
+    button.secondary, .button.secondary {
+        background-color:#fff !important;
     }
 }
 

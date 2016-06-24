@@ -10,11 +10,16 @@
     <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/hash-carosel.css" rel="stylesheet" />
+    <script src="js/jquery-2.0.3.js"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slide-image.js"></script>
 </head>
 <body>
     <header>
@@ -52,7 +57,6 @@
                                     <option>Truyện trinh thám</option>
                                     <option>Sách thiếu nhi</option>
                                     <option>Tiểu thuyết</option>
-
                                     <option>Khoa học viễn tưởng</option>
                                     <option>Sách giáo khoa</option>
                                     <option class="main-category">---Xe---</option>
@@ -83,8 +87,8 @@
                                 <!--<span>Khu vực</span>-->
                                 <select>
                                     <option selected value="all">Tất cả khu vực</option>
-                                    <option class="main-category">---TPHCM---</option>
-                                    <option class="main-category">---Hà Nội---</option>
+                                    <option>TPHCM</option>
+                                    <option>Hà Nội</option>
                                     <option>An Giang</option>
                                     <option>Bà Rịa - Vũng Tàu</option>
                                     <option>Bạc Liêu</option>
@@ -249,193 +253,100 @@
                 <div class="pri-right">
                     <div class="clearfix main-header">
                         <div class="main-title">
-                            <h3>Rao vặt gần đây</h3>
-                        </div>
-                        <div class="main-sort hidden">
-                            <span>Giá</span>
-                            <img id="price-filter" src="images/arrow-down.png" alt="" width="23" onclick="change_img()" />
+                            <h3>Chi tiết sản phẩm</h3>
                         </div>
                     </div>
-                    <div class="group-item">
-                        <div class="group-title clearfix"><h4>Sản phẩm nổi bật</h4></div>
-                        <div class="item-list">
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                    <div class="detail-post clearfix">
+                        <div class="product-info-item-img group-carousel">
+                            <div class="owl-carousel">
+                                <div class="owl-item">
+                                    <div class="" data-hash="zero">
+                                        <img src="images/item-1.jpg" />
                                     </div>
                                 </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                            <!-- put more item here-->
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
+                                <div class="owl-item">
+                                    <div class="" data-hash="one">
+                                        <img src="images/item-2.jpg" />
                                     </div>
                                 </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                <div class="owl-item">
+                                    <div class="" data-hash="two">
+                                        <img src="images/item-3.jpg" />
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-3.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
+                            <div class="hash">
+                                <a class="button secondary url" href="#zero">
+                                    <img src="images/item-1.jpg" />
+                                </a>
+                                <a class="button secondary url" href="#one">
+                                    <img src="images/item-2.jpg" />
+                                </a>
+                                <a class="button secondary url" href="#two">
+                                    <img src="images/item-3.jpg" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info clearfix">
+                            <h3>Sách Hà Nội</h3>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Người đăng:
                                 </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
+                                <div class="info-2">
+                                    Hungdk1994
+                                </div>
+                            </div>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Thời gian:
+                                </div>
+                                <div class="info-2">
+                                    11h23AM 22/5/2016
+                                </div>
+                            </div>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Giá:
+                                </div>
+                                <div class="info-2">
+                                    150.000 VNĐ
+                                </div>
+                            </div>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Loại:
+                                </div>
+                                <div class="info-2">
+                                    <a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a>
+                                </div>
+                            </div>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Số điện thoại:
+                                </div>
+                                <div class="info-2">
+                                    0909 909 909
+                                </div>
+                            </div>
+                            <div class="product-info-item clearfix">
+                                <div class="info-1">
+                                    Địa chỉ:
+                                </div>
+                                <div class="info-2">
+                                    515A CC Gia Phú, Quận Bình Tân, TP.HCM
                                 </div>
                             </div>
                         </div>
-                        <div class="see-all">
-                            <a href="./Collection.html" title="Xem tất cả">Xem tất cả >></a>
+
+                        <div class="description">
+                            <h3>Mô tả chi tiết</h3>
+                            <p>I was born twice: first, as a baby girl, on a remarkably smogless Detroit day of January 1960; and then again, as a teenage boy, in an emergency room near Petoskey, Michigan, in August of l974. . . My birth certificate lists my name as Calliope Helen Stephanides. My most recent driver's license...records my first name simply as Cal."</p>
+                            <p>So begins the breathtaking story of Calliope Stephanides and three generations of the Greek-American Stephanides family who travel from a tiny village overlooking Mount Olympus in Asia Minor to Prohibition-era Detroit, witnessing its glory days as the Motor City, and the race riots of l967, before they move out to the tree-lined streets of suburban Grosse Pointe, Michigan. To understand why Calliope is not like other girls, she has to uncover a guilty family secret and the astonishing genetic history that turns Callie into Cal, one of the most audacious and wondrous narrators in contemporary fiction. Lyrical and thrilling, Middlesex is an exhilarating reinvention of the American epic.</p>
+                            <p>Middlesex is the winner of the 2003 Pulitzer Prize for Fiction.</p>
                         </div>
-                    </div>
-                    <!-- put more group item here-->
-                    <div class="group-item">
-                        <div class="group-title clearfix"><h4>Sách</h4></div>
-                        <div class="item-list">
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                            <!-- put more item here-->
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-3.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="see-all">
-                            <a href="./Collection.html" title="Xem tất cả">Xem tất cả >></a>
-                        </div>
-                    </div>
-                    <div class="group-item">
-                        <div class="group-title clearfix"><h4>Thiết bị điện tử</h4></div>
-                        <div class="item-list">
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                            <!-- put more item here-->
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                            <div class="item clearfix">
-                                <div class="col-item-1">
-                                    <div class="item-img">
-                                        <a href="./Product.html" title="Hà nội 36 phố phường"><img src="./images/item-3.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="item-info">
-                                        <h4><a href="./Product.html" title="Hà Nội 36 phố phường">Hà Nội 36 phố phường</a></h4>
-                                        <p class="item-price">150.000 VNĐ</p>
-                                        <p class="item-category"><a href="./Collection.html" alt="Tiểu thuyết">Tiểu thuyết</a></p>
-                                        <p class="item-location">Quận 11, TP.HCM</p>
-                                        <p class="item-poster">Đăng bởi: Phạm Nguyễn Đăng Thi</p>
-                                    </div>
-                                </div>
-                                <div class="col-item-2">
-                                    <p class="item-clock"><i class="fa fa-clock-o"></i> 1 tiếng trước</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="see-all">
-                            <a href="./Collection.html" title="Xem tất cả">Xem tất cả >></a>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -521,7 +432,7 @@
 	 {
  			//$("#lbl_error").hide();
 			alert("Đăng nhập thành công!");
-			//window.location = "/__ng_tin.html";
+			window.location = "Post.html";
 	 }
 	 else {
 			$("#lbl_error").show();

@@ -98,8 +98,8 @@
                                 <!--<span>Khu vực</span>-->
                                 <select>
                                     <option selected value="all">Tất cả khu vực</option>
-                                    <option class="main-category">---TPHCM---</option>
-                                    <option class="main-category">---Hà Nội---</option>
+                                    <option>TPHCM</option>
+                                    <option>Hà Nội</option>
                                     <option>An Giang</option>
                                     <option>Bà Rịa - Vũng Tàu</option>
                                     <option>Bạc Liêu</option>
@@ -195,7 +195,7 @@
                             <li class="active">
                                 <a title="Thông tin tài khoản" href="./AccountInfo.html">Thông tin tài khoản</a>
                             </li>
-                            <li class="active">
+                            <li class="">
                                 <a title="Danh sách tin đăng" href="./ListPost.html">Danh sách tin đăng</a>
                             </li>
                             <li class="">
@@ -214,7 +214,31 @@
                         </div>
                     </div>
                     <div class="detail-post">
-                    
+                        <form id="myForm" role="form" novalidate="">
+                            <div class="contact-info ">
+                                <br />
+                                <div class="row-item form-group clearfix">
+                                    <p>Họ và tên</p>
+                                    <input type="text" class="form-control" size="50" value="user123@gmail.com" />
+                                </div>
+                                <div class="row-item form-group clearfix">
+                                    <p>Email</p>
+                                    <input type="email" class="form-control" size="50" value="user123@gmail.com" />
+                                </div>
+                                <div class="row-item form-group clearfix">
+                                    <p>Số điện thoại</p>
+                                    <input type="number" class="form-control" value="0909909909" />
+                                </div>
+                                <div class="row-item form-group clearfix">
+                                    <p>Địa chỉ</p>
+                                    <input type="text" class="form-control" size="150" value="227 NVC, P5, Q.5, TPHCM" />
+                                </div>
+                                <div class="post-submit">
+                                    <button class="btn">Lưu</button>
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>

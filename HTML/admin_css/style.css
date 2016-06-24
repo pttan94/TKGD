@@ -94,7 +94,7 @@ form label
   margin-bottom:15px;
 }
 
-.button{
+#boxForm .button{
   text-align: center;
   padding: 10px;
   width: 250px;
@@ -108,7 +108,7 @@ form label
   background-color: rgb(255, 203, 96);
 }
 
-.button
+#boxForm .button
 {
   padding:10px;
 
@@ -145,4 +145,105 @@ form label
   color: red;
   margin-left: 45px;
 }
+/*======================End Login=========================*/
 
+
+/*======================Home==============================*/
+.admin {
+    padding-top:20px;
+    min-height:614px;
+}
+.logo img {
+    padding-top: 0;
+}
+.admin .top-right{
+    margin-top:0;
+}
+.admin .top-right h1{
+    color: #00b7f1;
+    font-weight:bold;
+}
+.admin .pri-right {
+    margin-bottom:20px;
+}
+.item-poster a {
+    color:green;
+}
+.item .item-img {
+    width:35%;
+}
+.item .item-info {
+    width:65%;
+}
+.item .item-img img {
+    height:175px;
+}
+.advan-search .advan {
+    width:20%;
+}
+.advan.advan-input input {
+    padding: 5px 15px;
+    border: 1px solid #e8e8e8;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    border-radius: 4px;
+    background: #fff;
+    outline: none;
+}
+.col-item-2 select {
+    border-radius:4px;
+    outline:none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #666;
+    font-weight:normal;
+    opacity:  0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+    font-weight:normal;
+    opacity:  0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+    font-weight:normal;
+    opacity:  0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #666;
+    font-weight:normal;
+    opacity:  0.5;
+}
+/*======================Responsive========================*/
+@media (max-width:991px) {
+    #boxForm {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .advan-search .advan {
+        width: 100%;
+    }
+
+    .advan.advan-input input {
+        width: 100%;
+    }
+
+    .item .item-img {
+        width: 100%;
+    }
+
+    .item .item-info {
+        width: 100%;
+    }
+    .group-item {
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .col-item-2 {
+    text-align: center;
+}
+}
